@@ -17,7 +17,6 @@ const projects = [
     description: "Created a language model for fusion oncoproteins using focused probabilistic masking.",
     status: "Paper in review, Nature Methods",
   },
-  // Add more projects here
 ]
 
 export default function Projects() {

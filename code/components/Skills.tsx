@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import {
   Table,
   TableBody,
-  // TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -19,7 +18,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-// import { Code, DefaultIcon } from "./sharedComponents";
 
 export default function Skills() {
 
