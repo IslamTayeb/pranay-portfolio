@@ -1,12 +1,8 @@
 import Link from "next/link";
 import { Section } from "./misc/Section";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-// import { LinkedInIcon } from "./Icons/LinkedInIcon";
-// import { GithubIcon } from "./Icons/GithubIcon";
-// import { ResearchGateIcon } from "./Icons/ResearchGateIcon";
-import { ArrowBigDown, Layers2, Scroll, ScrollText } from "lucide-react";
-import { Code, DefaultIcon } from "./sharedComponents";
+import { DefaultIcon } from "./sharedComponents";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export const Header = () => {

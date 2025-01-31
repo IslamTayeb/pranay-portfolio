@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Section } from "./misc/Section"
 import { Badge } from "./ui/badge"

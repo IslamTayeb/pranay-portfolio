@@ -1,7 +1,6 @@
 import React from "react";
 import { Section } from "./misc/Section";
-import { Copyright, CopyrightIcon, Heart } from "lucide-react";
-import { Code, DefaultIcon } from "./sharedComponents";
+import { Copyright } from "lucide-react";
 import { HeartFilledIcon } from "@radix-ui/react-icons";
 
 export const Footer = () => {
@@ -14,7 +13,7 @@ export const Footer = () => {
             {"2024"} {"All rights reserved"}{" "}
           </span>
           <div className="ml-auto text-right max-[375px]:hidden">
-            Made with <HeartFilledIcon className="inline -mt-1" width={11.5}/> in{" "}
+            Made with <HeartFilledIcon className="inline -mt-1" width={11.5} /> in{" "}
             <span className="italic font-semibold">Durham, NC</span>
           </div>
         </p>

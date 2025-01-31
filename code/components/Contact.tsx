@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Section } from "./misc/Section";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-// import { Card } from "@/components/ui/card";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -21,10 +20,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { sendEmail } from "./sendEmail";
 import { ArrowUpRight, Check, Copy, Mail } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
-// import { Code, DefaultIcon } from "./misc/sharedComponents";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-// import { LinkedInIcon } from "./Icons/LinkedInIcon";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import {
   Tooltip,
