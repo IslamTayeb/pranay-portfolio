@@ -226,15 +226,15 @@ export default function Publications() {
                 >
                   <AccordionItem
                     value="item-1"
-                    className="pb-4 text-pretty flex flex-row transition gap-4"
+                    className="pb-4 flex flex-row transition gap-4"
                   >
                     <div className="flex items-center text-muted-foreground text-sm w-min text-left font-mono">
                       <p className="">{pubDate}</p>
                     </div>
-                    <div>
+                    <div className="">
                       <div className="flex flex-row">
                         <div className="text-primary flex flex-col">
-                          <div className="text-base font-bold text-foreground">
+                          <div className="text-base font-bold text-foreground ">
                             <Link
                               href={pubLink}
                               target="_blank"
@@ -302,7 +302,7 @@ export default function Publications() {
                         ))}
                       </div>
                     </div>
-                    <AccordionTrigger className="pb-0 p-1" />
+                    <AccordionTrigger className="pb-0 p-1 ml-auto" />
                   </AccordionItem>
                 </Accordion>
               </div>
