@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Section } from "./misc/Section";
 import { Badge } from "@/components/ui/badge";
@@ -21,227 +20,177 @@ import { Code, DefaultIcon } from "./sharedComponents";
 export default function Publications() {
   const publicationsData = [
     {
-      pubDate: "Dec. 2023",
+      pubDate: "Oct. 2024",
       pubAuthors: (
         <>
-          Mahmoud Abdelnaby,{" "}
-          <span className="font-semibold text-primary">Islam Tayeb</span>, Ahmed
-          Alloush, Hussain Alyosef, Aljazi Alnoaimi, Mostafa Zeama, Mohammed
-          Mohammed, Sagheer Onaizi
+          Wang, L.†, Pulugurta. R.†, <span className="font-semibold text-primary">Vure, P†</span>, Pal, A., Zhang, Y., Chatterjee, P. (†equal contribution)
         </>
       ),
-      pubImpact: "Impact Factor: 7.2",
-      pubTitle:
-        "Post-synthetic Modification of UiO-66 Analogue Metal-Organic Framework as Potential Solid Sorbent for Direct Air Capture",
-      pubJournal: (
+      pubImpact: "Paper in review, Nature Methods",
+      pubTitle: "PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation",
+      pubJournal: "NeurIPS AIDrugsX 2024",
+      pubJournalLink: "https://doi.org/10.48550/arXiv.2410.20667",
+      pubType: "Poster Presentation",
+      pubDescription: (
         <>
-          Journal of CO
-          <span
-            style={{
-              verticalAlign: "sub",
-              fontSize: 8,
-              lineHeight: "1",
-            }}
-          >
-            2
-          </span>{" "}
-          Utilization
+          While traditional models struggle to predict the properties of peptide therapeutics, PepDoRA bridges this gap by using Weight-Decomposed Low-Rank Adaptation to fine-tune ChemBERTa-77M-MLM, creating optimized embeddings that can accurately predict various properties of both modified and unmodified peptides.
         </>
       ),
-      pubJournalLink:
-        "https://www.journals.elsevier.com/journal-of-co2-utilization",
+      pubLink: "https://doi.org/10.48550/arXiv.2410.20667",
+      pubCategory: [
+        {
+          name: "Deep Learning",
+          icon: "brain-circuit",
+        },
+        {
+          name: "Drug Discovery",
+          icon: "flask-round",
+        }
+      ],
+    },
+    {
+      pubDate: "Jun. 2024",
+      pubAuthors: (
+        <>
+          Vincoff, S., Kholina, K., Goel, S., Pulugurta, R., <span className="font-semibold text-primary">Vure, P.</span>, Chatterjee, P.
+        </>
+      ),
+      pubImpact: "Paper in review, Nature Methods",
+      pubTitle: "FusOn-pLM: A Fusion Oncoprotein-Specific Language Model via Focused Probabilistic Masking",
+      pubJournal: "MOML @ MIT, 2024",
+      pubJournalLink: "https://doi.org/10.1101/2024.06.03.597245",
+      pubType: "Poster Presentation",
+      pubDescription: (
+        <>
+          Fusion oncoproteins, which drive various cancers through chromosomal translocations, have been historically difficult to target therapeutically due to their disordered nature and lack of druggable pockets. Our new FusOn-pLM model addresses this challenge by fine-tuning ESM-2 on fusion oncoprotein sequences with focused masking on key residues, generating optimized embeddings that outperform baselines and enable potential therapeutic design applications.
+        </>
+      ),
+      pubLink: "https://doi.org/10.1101/2024.06.03.597245",
+      pubCategory: [
+        {
+          name: "Oncology",
+          icon: "microscope",
+        },
+        {
+          name: "Machine Learning",
+          icon: "brain-circuit",
+        }
+      ],
+    },
+    {
+      pubDate: "Mar. 2024",
+      pubAuthors: (
+        <>
+          Chen, T., <span className="font-semibold text-primary">Vure, P.</span>, Pulugurta, R., Chatterjee, P.
+        </>
+      ),
+      pubImpact: "Journal paper in preparation",
+      pubTitle: "AMP-Diffusion: Integrating Latent Diffusion with Protein Language Models for Antimicrobial Peptide Generation",
+      pubJournal: "NeurIPS 2023 GenBio Workshop",
+      pubJournalLink: "https://doi.org/10.1101/2024.03.03.583201",
+      pubType: "Poster Presentation",
+      pubDescription: (
+        <>
+          While diffusion models have shown remarkable success across AI domains, their application to protein design through continuous latent space diffusion within protein language models remains underexplored. We present AMP-Diffusion, a latent diffusion model that leverages ESM-2 to generate antimicrobial peptides with properties closely matching natural sequences, demonstrating the potential of pLM-based diffusion for peptide design.
+        </>
+      ),
+      pubLink: "https://doi.org/10.1101/2024.03.03.583201",
+      pubCategory: [
+        {
+          name: "Generative AI",
+          icon: "sparkles",
+        },
+        {
+          name: "Protein Design",
+          icon: "dna",
+        }
+      ],
+    },
+    {
+      pubDate: "Oct. 2023",
+      pubAuthors: (
+        <>
+          Chen, T., Pertsemlidis, S., Watson, R., Kavirayuni, V.S, Hsu, A., <span className="font-semibold text-primary">Vure, P.</span>, Pulugurta, R., Vincoff, S., Hong, L., Wang, T., Yudistyra, V., Haarer, E., Zhao, L., Chatterjee, P.
+        </>
+      ),
+      pubImpact: "Paper in review, Nature Biotechnology",
+      pubTitle: "PepMLM: Target Sequence-Conditioned Generation of Therapeutic Peptide Binders via Span Masked Language Modeling",
+      pubJournal: "",
+      pubJournalLink: "",
       pubType: "Research Article",
       pubDescription: (
         <>
-          <p className="mb-1.5">
-            This study enhances the UiO-66 metal-organic framework for direct
-            air capture by modifying UiO-66-(OH)
-            <span
-              style={{
-                verticalAlign: "sub",
-                fontSize: 7.25,
-                lineHeight: "1",
-                fontWeight: "bold",
-              }}
-            >
-              2
-            </span>{" "}
-            with APTES, resulting in a 15% increase in CO
-            <span
-              style={{
-                verticalAlign: "sub",
-                fontSize: 7.25,
-                lineHeight: "1",
-                fontWeight: "bold",
-              }}
-            >
-              2
-            </span>{" "}
-            adsorption capacity and improved selectivity. The modified
-            UiO-66-APTES demonstrates high stability and effectiveness in CO
-            <span
-              style={{
-                verticalAlign: "sub",
-                fontSize: 7.25,
-                lineHeight: "1",
-                fontWeight: "bold",
-              }}
-            >
-              2
-            </span>{" "}
-            separation from air, making it a promising DAC adsorbent.
-          </p>
-          <p>
-            I was involved in scheming and synthesizing all materials and
-            performed full material characterization. I was further involved in
-            writing the original manuscript and presenting it at 2 local
-            symposiums in Saudi Arabia.
-          </p>
+          Many disease-related proteins have been difficult to target with traditional drugs due to their lack of binding pockets, but PepMLM addresses this by generating linear peptide binders directly from target protein sequences through a novel fine-tuning approach of ESM-2. The system's effectiveness has been demonstrated both computationally and experimentally, successfully generating peptides that can induce degradation of disease-relevant proteins when fused to E3 ubiquitin ligase domains.
         </>
       ),
-      pubLink: "https://doi.org/10.1016/j.jcou.2023.102647",
+      pubLink: "https://doi.org/10.48550/arXiv.2310.03842",
       pubCategory: [
         {
-          name: "Organic Chemistry",
-          icon: "fluent:molecule-16-filled",
+          name: "Drug Design",
+          icon: "flask-round",
         },
         {
-          name: "Materials Science",
-          icon: "mdi:pipe-disconnected",
-        },
-        {
-          name: "Environmental Tech",
-          icon: "mdi:environment",
-        },
+          name: "Machine Learning",
+          icon: "brain-circuit",
+        }
       ],
     },
     {
-      pubDate: "Jul. 2022",
+      pubDate: "Jun. 2023",
       pubAuthors: (
         <>
-          Abdullah Alsulaiman, Siraj Alharthi, Ahmed Albariqi, Rasha Mutabaqani,
-          Fawzi Bokhari,{" "}
-          <span className="font-semibold text-primary">Islam Tayeb</span>, Dalia
-          Alharthi, Muhammad Tariq, Yasser Babaier
+          Bhat, S., Palepu, K. et al., <span className="font-semibold text-primary">Vure, P.</span>, Chatterjee, P.
         </>
       ),
-      pubImpact: "Impact Factor: 1.2",
-      pubTitle:
-        "KRAS G12C-Mutant Non-Small-Cell Lung Adenocarcinoma: First Documented Report in the Arabian Gulf",
-      pubJournal: "Cureus Journal",
-      pubJournalLink: "https://www.cureus.com/",
-      pubType: "Case Report",
-      pubDescription: (
-        <>
-          <p className="mb-1.5">
-            This case report describes the first documented cases of KRAS
-            G12C-mutant non-small-cell lung adenocarcinoma in the Arabian Gulf.
-            Two Saudi males, aged 64 and 76, were diagnosed using reverse
-            transcription-PCR. The 64-year-old, an ex-smoker, had generalized
-            lymphadenopathy and a right lung mass. The 76-year-old, a
-            non-smoker, had stage III-A left lung adenocarcinoma. The study
-            calls for further research on KRAS mutations in the region to
-            improve treatment strategies.
-          </p>
-          <p>
-            I was involved in data collection and manuscript writing,
-            collaborating with multiple physicians and describing their input
-            and analyses.
-          </p>
-        </>
-      ),
-      pubLink: "http://dx.doi.org/10.7759/cureus.27090",
-      pubCategory: [
-        {
-          name: "Medical Oncology",
-          icon: "fa6-solid:ribbon",
-        },
-        {
-          name: "Clinical Genetics",
-          icon: "mdi:dna",
-        },
-        {
-          name: "Regional Studies",
-          icon: "fluent:location-16-filled",
-        },
-      ],
-    },
-    {
-      pubDate: "Jun. 2022",
-      pubAuthors: (
-        <>
-          Siraj Alharthi,{" "}
-          <span className="font-semibold text-primary">Islam Tayeb</span>, Romar
-          Pascual, Salman Aloufi, Rasha Mutabbaqani, Dalia Alharthi, Ahmed
-          Al-Bariqi, Basem Almutiri, Abdullah Alsulaiman
-        </>
-      ),
-      pubImpact: "Impact Factor: 0.8",
-      pubTitle:
-        "RAS Gene Mutations and Their Prevalence in Non-Small Cell Lung Cancer: A Review",
-      pubJournal: "Bioscience Research",
+      pubImpact: "Paper in review, Science Advances",
+      pubTitle: "De Novo Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling",
+      pubJournal: "",
       pubJournalLink: "",
-      pubType: "Literature Review",
+      pubType: "Research Article",
       pubDescription: (
         <>
-          This review discusses RAS gene mutations in NSCLC, focusing on KRAS
-          variants G12C, G12V, and G12D. G12C is common in smokers and lung
-          adenocarcinoma, with sotorasib and adagrasib as effective inhibitors.
-          KRAS mutations impact cell growth and survival, with G12D potentially
-          useful as an immunotherapy biomarker. The review highlights the need
-          for further research due to NSCLC&apos;s severity and prevalence in
-          high altitude areas especially.,
+          PepPrCLIP provides a novel framework for designing target-binding peptides by combining ESM-2's latent space exploration with CLIP-based screening, requiring only the target protein's sequence. The system's effectiveness has been validated experimentally, successfully generating peptides that can both inhibit and degrade disease-relevant proteins when fused to E3 ubiquitin ligase domains.
         </>
       ),
-      pubLink:
-        "https://www.researchgate.net/publication/361118570_RAS_gene_mutations_and_their_prevalence_in_non-small_Cell_lung_cancer_A_Review",
+      pubLink: "https://doi.org/10.1101/2023.06.26.546591",
       pubCategory: [
         {
-          name: "Medical Oncology",
-          icon: "fa6-solid:ribbon",
+          name: "Protein Design",
+          icon: "dna",
         },
-        { name: "Clinical Genetics", icon: "mdi:dna" },
         {
-          name: "Targeted Therapy",
-          icon: "bx:target-lock",
-        },
+          name: "Machine Learning",
+          icon: "brain-circuit",
+        }
       ],
     },
     {
-      pubDate: "Apr. 2022",
+      pubDate: "Nov. 2023",
       pubAuthors: (
         <>
-          Siraj Alharthi,{" "}
-          <span className="font-semibold text-primary">Islam Tayeb</span>, Romar
-          Pascual, Salman Aloufi, Khalid Alotaibi
+          Kapingidza, B. et al., <span className="font-semibold text-primary">Vure, P.</span>, Azoitei, M.L.
         </>
       ),
-      pubImpact: "Impact Factor: 0.8",
-      pubTitle:
-        "Medicinal Effects and Phytochemical Composition of Capparis Cartilaginea Decne: A Review",
-      pubJournal: "Bioscience Research",
-      pubJournalLink: "",
-      pubType: "Literature Review",
+      pubImpact: "Nature Communications 14, 7897 (2023)",
+      pubTitle: "Engineered immunogens to elicit antibodies against conserved coronavirus epitopes",
+      pubJournal: "Nature Communications",
+      pubJournalLink: "https://www.nature.com/ncomms/",
+      pubType: "Research Article",
       pubDescription: (
         <>
-          This review highlights Capparis Cartilaginea Decne from the
-          Capparaceae family, valued for its medicinal use historically
-          throughout many areas of Asia and Africa. Phytochemical screenings
-          reveal diverse metabolites supporting its therapeutic claims,
-          validating its traditional medicinal applications.
+          The design of scaffolded immunogens displaying conserved regions of the SARS-CoV-2 spike protein offers a way to avoid immune responses to the highly mutable receptor binding domain. These engineered proteins successfully bind to broadly protective antibodies and, when used as vaccine boosters in mice, generate broad immunity against betacoronaviruses and protect against live virus challenges.
         </>
       ),
-      pubLink:
-        "https://www.researchgate.net/publication/359931677_Medicinal_effects_and_Phytochemical_composition_of_Capparis_Cartilaginea_Decne_A_Review",
+      pubLink: "https://doi.org/10.1038/s41467-023-43638-9",
       pubCategory: [
         {
-          name: "Phytochemistry",
-          icon: "mdi:leaf",
+          name: "Immunology",
+          icon: "shield",
         },
         {
-          name: "Folk Medicine",
-          icon: "icon-park-solid:traditional-chinese-medicine",
-        },
+          name: "Protein Design",
+          icon: "dna",
+        }
       ],
     },
   ];
@@ -249,7 +198,7 @@ export default function Publications() {
   return (
     <Section className="flex flex-col items-start gap-4">
       <div>
-        <Badge variant={"outline"} className="" id="publications">
+        <Badge variant="outline" className="" id="publications">
           Publications
         </Badge>
       </div>
@@ -269,11 +218,11 @@ export default function Publications() {
         }) => {
           return (
             <div key={pubTitle} className="project max-md:w-full">
-              <div className="flex items-center gap-4 mx-2 ">
+              <div className="flex items-center gap-4 mx-2">
                 <Accordion
                   type="single"
                   collapsible
-                  className="w-full font-sans "
+                  className="w-full font-sans"
                 >
                   <AccordionItem
                     value="item-1"
@@ -323,9 +272,9 @@ export default function Publications() {
                                 </TooltipContent>
                               </Tooltip>
                             </TooltipProvider>
-                            {" - " + pubType}{" "}
+                            {pubJournal && " - "}{pubType}
                           </div>
-                          <div className="text-muted-foreground  text-xs font-light py-1.5">
+                          <div className="text-muted-foreground text-xs font-light py-1.5">
                             {typeof pubAuthors === "string" ? (
                               `- ${pubAuthors}`
                             ) : (
@@ -339,7 +288,6 @@ export default function Publications() {
                       </AccordionContent>
                       <div className="flex flex-wrap gap-2 text-xs leading-none">
                         {pubCategory.map((category) => (
-                          // consider using max-md:text-nowrap
                           <Code
                             key={category.name}
                             className="inline-flex items-center"
@@ -364,4 +312,4 @@ export default function Publications() {
       )}
     </Section>
   );
-};
+}

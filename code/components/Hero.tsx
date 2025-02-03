@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image"
 import { useTypewriter, Cursor } from "react-simple-typewriter"
 import { Section } from "./misc/Section"
@@ -14,12 +13,20 @@ export default function Hero() {
   return (
     <Section className="flex flex-col items-start gap-4">
       <div>
-        <Badge variant={"outline"} className="" id="publications">
+        <Badge variant="outline" className="" id="publications">
           Profile
         </Badge>
       </div>
       <div className="flex items-center gap-8">
-        <Image src="/pranay.jpg" alt="Pranay Vure" width={200} height={200} className="rounded-lg" />
+        <div className="overflow-hidden rounded-lg">
+          <Image 
+            src="/headshot.jpg" 
+            alt="Pranay Vure" 
+            width={200} 
+            height={200}
+            className="object-cover"
+          />
+        </div>
         <div className="text-left">
           <h1 className="text-4xl font-bold mb-2">Pranay Vure</h1>
           <h2 className="text-2xl mb-4">

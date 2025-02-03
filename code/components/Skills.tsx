@@ -26,12 +26,8 @@ export default function Skills() {
       category: "Programming Languages",
       technologies: [
         { name: "Python", icon: "akar-icons:python-fill" },
-        { name: "TypeScript", icon: "akar-icons:typescript-fill" },
         { name: "Java", icon: "fa6-brands:java" },
-        { name: "SQL", icon: "fa-solid:database" },
         { name: "R Language", icon: "devicon-plain:r" },
-        { name: "C Language", icon: "devicon-plain:c" },
-        { name: "MATLAB", icon: "file-icons:matlab" },
         // { name: "LaTeX", icon: "file-icons:latex" },
       ],
     },
@@ -40,33 +36,22 @@ export default function Skills() {
       technologies: [
         { name: "TensorFlow", icon: "simple-icons:tensorflow" },
         { name: "PyTorch", icon: "simple-icons:pytorch" },
-        { name: "BERT", icon: "bi:google" },
         { name: "Gemini", icon: "simple-icons:googlegemini" },
         { name: "GPT", icon: "simple-icons:openai" },
         { name: "SciKit-Learn", icon: "simple-icons:scikitlearn" },
       ],
     },
     {
-      category: "Web/App Development",
+      category: "Experimental Skills",
       technologies: [
-        { name: "React", icon: "akar-icons:react-fill" },
-        { name: "Angular", icon: "cib:angular" },
-        { name: "SCSS", icon: "simple-icons:sass" },
-        { name: "Framer Motion", icon: "teenyicons:framer-solid" },
-        { name: "HTML5", icon: "simple-icons:html5" },
-        { name: "CSS3", icon: "simple-icons:css3" },
-        { name: "PostgreSQL", icon: "akar-icons:postgresql-fill" },
+        { name: "Bacterial Transformation", icon: "simple-icons:tensorflow" },
+        { name: "Mammalian Transfection", icon: "simple-icons:pytorch" },
+        { name: "Cell Culture", icon: "simple-icons:googlegemini" },
+        { name: "Protein Purification", icon: "simple-icons:openai" },
+        { name: "Flow Cytometry", icon: "simple-icons:scikitlearn" },
       ],
     },
-    {
-      category: <>Deployment&nbsp;& Integration</>,
-      technologies: [
-        { name: "Linux", icon: "devicon-plain:linux" },
-        { name: "Git", icon: "simple-icons:git" },
-        { name: "Docker", icon: "simple-icons:docker" },
-        { name: "Vercel", icon: "ion:logo-vercel" },
-      ],
-    },
+
     // {
     //   category: "Research",
     //   technologies: [
